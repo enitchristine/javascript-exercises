@@ -7,19 +7,22 @@ const subtract = function(num1,num2) {
 };
 
 const sum = function(array) {
-  let total = 0;
-	for (let i=0; i<array.length;i++){
-    total+=array[i];
-  }
-  return total;
+  // let total = 0;
+	// for (let i=0; i<array.length;i++){
+  //   total+=array[i];
+  // }
+  // return total;
+
+  return array.reduce(add,0);
 };
 
 const multiply = function(array) {
-  let total = 1;
-	for (let i=0; i<array.length;i++){
-    total=total*array[i];
-  }
-  return total;
+  // let total = 1;
+	// for (let i=0; i<array.length;i++){
+  //   total=total*array[i];
+  // }
+  // return total;
+  return array.reduce((a,b)=>a*b,1);
 };
 
 const power = function(num, toPower) {
@@ -28,6 +31,7 @@ const power = function(num, toPower) {
     total=total*num;
   }
   return total;
+  
 };
 
 const factorial = function(n) {
